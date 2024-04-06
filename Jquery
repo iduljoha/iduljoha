@@ -1,0 +1,44 @@
+<!--======================================= start mouse event script ===========================-->
+   <script>
+        $(document).ready(function(){
+            $('#images').click(function(){
+                $('#images').css('background-color','red');
+                     
+            });
+
+            $('#images').dblclick(function(){
+                $('#images').css('background-color','purple');
+               
+            });
+
+            $('#images').contextmenu(function(){
+                $('#images').css('background-color','tan');
+            });
+
+            $('#images').hover(function() {
+                $('#images').css('background-color','white');
+            });
+
+            $('#images').mouseleave(function () {
+                $('#images').css('background-color','green');
+            });
+
+              // The mouseenter event runs when the user's mouse pointer enters the element, and the mouseleave event runs when the user'
+              $('#images img').click(function(){
+                $('#images img').css('width', '100%');
+              })
+        });
+           
+     </script>
+
+    <!--======================================= endmouse event script ===========================-->
+    
+    <!--On Methos =================-->
+    <script>
+        $(document).ready(function () {
+            $('.box').on("mouseover mouseout", function () {
+                $(this).toggleClass("first"); //Store the object to
+            });
+        });
+
+    </script>
