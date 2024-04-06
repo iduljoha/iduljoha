@@ -1,0 +1,14 @@
+ <!---prippendto===and appendto-->
+    <script>
+        $(document).ready(function () {
+            $('#appendt').click(function () {
+                $('<h2> AppendTo : idul joha</h2>').appendTo('.box');
+            });
+        });
+
+        $(document).ready(function () {
+            $('#pripendt').click(function () {
+                $('<h2> PrippandtoTo : idul joha</h2>').prependTo('.box');
+            });
+        });
+    </script>
