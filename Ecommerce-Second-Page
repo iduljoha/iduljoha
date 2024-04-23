@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!---=================================Use Meta Tage form Loking Webbroser=========================================-->
+  <meta charset="UTF-8">
+  <meta name="description" content="This is my first Web Application">
+  <meta name="http-equiv" http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!---================================ End the Meta Tage==========================================================-->
+  <title> --Ecommarces--</title>
+  <!---=================================Start Bootstrap.mai.css -5 =============================================================-->
+  <link rel="stylesheet" href="/Bootstrap/CSS/bootstrap.min.css">
+  <!---============================== Style .css==================================================================-->
+  <link rel="stylesheet" href="/css/Esite.css">
+  <!---============================== Owl.Carousel.css==================================================================-->
+  <link rel="stylesheet" href="/Bootstrap/CSS/owl.carousel.min.css">
+
+
+  <!-- Custom styles for this template -->
+  <!-- Font Awesome icons (free version)-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <style>
+    .popup {
+      padding: 35px;
+      display: none;
+      position: fixed;
+      z-index: 1;
+      top: 100px;
+      left: 100px;
+      width: 200px;
+      height: 300px;
+      overflow: auto;
+      color: aliceblue;
+      background-color: rgb(182, 213, 220);
+      background-color: rgb(182, 213, 220);
+    }
+    .popup-signup{
+      padding: 35px;
+      display: none;
+      position: fixed;
+      z-index: 1;
+      top: 100px;
+      left: 100px;
+      width: 200px;
+      height: 300px;
+      overflow: auto;
+      color: aliceblue;
+      background-color: rgb(182, 213, 220);
+      background-color: rgb(182, 213, 220);
+    }
+    .close {
+      padding:20px 0 0  auto;
+      text-align: end;
+     
+     
+    }
+    .close  button{
+      
+      background: transparent;
+      border: none;
+    }
+    .close  button span{
+      font-size: 50px;
+      font-weight: 200;
+      cursor: pointer;
+    }
+    .card{
+      margin-top: 40px;
+      box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.4), 0 -6px 18px 0 rgba(0, 0, 25, 0.7) ;
+      
+      float: right;
+     overflow: hidden;
+
+    }
+    .card img{
+      object-fit: cover;
+      transition: 0.8s;
+      height: 100%;
+    }
+    .card:hover img{
+      transform: scale(1.5);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="manubar">
+    <header>
+      <div class="container-fluid">
+        <div class="row ">
+          <div class="col-md-4 text-center">
+            <img src="/Images/A2ZLogo1.png" alt="" width="150px;">
+          </div>
+
+          <div class="col-md-4 text-center ">
+            <div class="serch">
+              <input type="search" form-control placeholder="Type to search..."> <a href="#"> <i
+                  class="fa fa-search"></i></a>
+
+            </div>
+
+          </div>
+          <div class="col-md-4 text-center">
+
+
+            <a id="user" href="#"> <i class="fa fa-user"></i> </a>
+            <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+            <a href="#"><i class="fa fa-whatsapp whatsapp"></i></a>
+            <a href="#"><i class="fa fa-location-arrow location"></i></a>
+
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon1"></span>
+          <span class="navbar-toggler-icon2"></span>
+          <span class="navbar-toggler-icon3"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Contact</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  <main role="main">
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/Images/IWD_3000x900_1709596149025_1._SX3000_QL85_FMpng_ (1).png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/Images/Bestsellers_3000x900._SX3000_QL85_FMpng_.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/Images/BxGy_2_new_3000x900._SX3000_QL85_FMpng_.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+ 
+      <div class="popup w-50">
+         <div class="mb-3 row">
+          <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" readonly class="form-control" id="staticEmail" value="email@example.com">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 offset-3">
+            <button type="submit" class="btn btn-primary">Login</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+            <button id="signup" type="button" class="btn btn-success">Sign Up</button>
+          </div>
+        </div>
+        <div class="close">
+          <button class="close" onclick="closePopup()"><span>&times;</span> </button>
+        </div>
+       
+      </div>
+
+
+
+
+      <div class="popup-signup w-50">
+
+
+        <div class="mb-3 row">
+          <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" readonly class="form-control" id="staticEmail" value="email@example.com">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword" placeholder="Enter Password">
+
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="inputPassword" class="col-sm-2 col-form-label">Confirm Password</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword" placeholder="Repeat your password">
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 offset-3">
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+            <button id="login" type="button" class="btn btn-success">Login </button>
+          </div>
+        </div>
+        <button class="close" onclick="close()"> &times;</button>
+      </div>
+
+ 
+    <div class="container p-4">
+    
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+        <div class="col">
+    
+          <div class="card">
+            <a href="#">
+              <img src="/Images/card/card-img-1.png" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+            </div>
+    
+          </div>
+        </div>
+        <div class="col">
+    
+          <div class="card">
+            <a href="#">
+              <img src="/Images/card/card-img-2.png" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+            </div>
+    
+          </div>
+        </div>
+        <div class="col">
+    
+          <div class="card">
+            <a href="#">
+              <img src="/Images/card/card-img-3.jpg" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+            </div>
+    
+          </div>
+        </div>
+        <div class="col">
+    
+          <div class="card">
+            <a href="#">
+              <img src="/Images/card/card-img-4.png" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+            </div>
+    
+          </div>
+        </div>
+        <div class="col">
+    
+          <div class="card">
+            <a href="#">
+              <img src="/Images/card/card-img-5.png" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+            </div>
+    
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <a href="#">
+              <img src="/Images/card/Ijewels_10._CB573355104_ (1).png" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+            </div>
+    
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <a href="#">
+              <img src="/Images/card/Ijewels_10._CB573355104_ (1).png" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+            </div>
+    
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <a href="#">
+              <img src="/Images/card/Ijewels_10._CB573355104_ (1).png" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+            </div>
+    
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <a href="#">
+              <img src="/Images/card/Ijewels_10._CB573355104_.png" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+            </div>
+    
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    <div class="container p-4">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+        <div class="col">
+    
+          <div class="card">
+            <a href="#">
+              <img src="/Images/card/card-img-6.png" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+            </div>
+    
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <a href="#">
+              <img src="/Images/card/card-img-7.png" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+            </div>
+    
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <a href="#">
+              <img src="/Images/card/card-img-8.png" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+            </div>
+    
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <a href="#">
+              <img src="/Images/card/card-img-9.png" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+            </div>
+    
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <a href="#">
+              <img src="/Images/card/card-img-10.png" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+            </div>
+    
+          </div>
+        </div>
+    
+      </div>
+    </div>
+   
+  </main>
+
+  <footer>
+    <section class="ft1">
+      <div class="container py-4">
+        <div class="row justify-content-between">
+          <div class="col-md-4 text-center text-md-left ">
+            <h3 class="my-4">About Us</h3>
+            <p><a href="#!">Our Story</a></p>
+            <p><a href="#!">Meet The Team</a></p>
+            <p><a href="#!">Our Blog</a></p>
+
+          </div>
+          <div class="col-md-4 text-center text-md-center mt-md-0 ">
+
+            <h3 class="my-4 ">Follow us on:</h3>
+
+            <div class="social-icon">
+
+              <a class="icon" href="#"> <i class="fa fa-instagram"></i> </a>
+              <a class="icon" href="#"> <i class="fa fa-instagram"></i> </a>
+              <a class="icon" href="#"> <i class="fa fa-instagram"></i> </a>
+              <a class="icon" href="#"> <i class="fa fa-instagram"></i> </a>
+              <a class="icon" href="#"> <i class="fa fa-instagram"></i> </a>
+              <a class="icon" href="#"> <i class="fa fa-instagram"></i> </a>
+
+
+            </div>
+
+
+
+
+
+          </div>
+          <div class="col-md-4 text-center text-md-right mt-md-0 ">
+            <h3 class="my-4 ">Contact Us</h3>
+            <ul class="text-center list-unstyled ">
+              <li><i class="fa fa-home mx-2"></i>Address:Basarikhpur chati khan katra shopno-2 Sisotar Ballia Uttar
+                pradesh</li>
+              <li>
+                <i class="fa fa-envelope mx-2"></i>Email: iduljoha@gmail.com
+              </li>
+              <li>
+                <i class="fa fa-phone mx-2"></i>Phone: + 91 -814153088
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="ft2">
+
+      <div class="py-3">&copy; 2024 A2ZCosmetics | Design by TemplateMo</div>
+    </section>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+
+
+
+  <!--*************************************** Link to Botstrap.mai.js****************************************************-->
+  <script src="/Bootstrap/JS/bootstrap.min.js"></script>
+
+  <!--*********************************************Link ja site.js*****************************************************-->
+  <script src="/js/site.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script type='text/javascript' src='http://codepen.io/assets/framework/bootstrap.js'> </script>
+  <script src="js/main.js"></script>
+  <!--==============================================jquery-3 cdn =================================-->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      $('.navbar-toggler').click(function () {
+        $(".navbar-toggler").toggleClass('change');
+      });
+    });
+
+
+
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('#user').click(function () {
+        $('.popup').css("display", "block");
+
+
+      });
+
+      $('#signup').click(function () {
+        $('.popup-signup').css("display", "block");
+         
+
+      });
+
+      $('#login').click(function () {
+        $('.popup-signup').css("display", "none");
+
+
+      });
+    });
+  </script>
+
+
+</body>
+
+</html>
