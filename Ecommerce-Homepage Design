@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> --Home--</title>
+    <!---=================================Start Bootstrap.mai.css -5 =============================================================-->
+    <link rel="stylesheet" href="/Bootstrap/CSS/bootstrap.min.css">
+    <!---============================== Style .css==================================================================-->
+    <link rel="stylesheet" href="/css/Esite.css">
+    <!---============================== Owl.Carousel.css==================================================================-->
+    <link rel="stylesheet" href="/Bootstrap/CSS/owl.carousel.min.css">
+
+
+    <!-- Custom styles for this template -->
+    <!-- Font Awesome icons (free version)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <style>
+        .dropdown-menu {
+            width: 80%;
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 100px;
+            left: 0;
+            right: 0;
+            top: 54Px;
+        }
+
+        .navbar-nav li:hover .dropdown-menu {
+
+
+            display: inline-block;
+        }
+
+        .sub-dropdown {
+            display: none;
+            position: absolute;
+            left: 290px;
+            background: #97c1c3;
+            top: 150px;
+            z-index: 1;
+        }
+
+        .sub-dropdown li {
+            list-style: none;
+
+        }
+
+        .dropdown-menu li:hover .sub-dropdown {
+            display: block;
+        }
+        .dropdown-menu .sub-dropdown li:hover .sub-dropdown-mobile{
+          display: block;
+        }
+        .sub-dropdown-mobile{
+          display: none;
+          position: absolute;
+          left: 120px;
+          width: 200px;;
+        }
+       .clearfix{
+        display: none;
+       }
+      .navbar-nav li:hover::after{
+        transform:scaleY(1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="manubar">
+        <header>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 text-center">
+                        <img src="/Images/A2ZLogo1.png" alt="" width="150px;">
+                    </div>
+
+                    <div class="col-md-5 text-center">
+                        <div class="serch">
+                            <input type="search" form-control placeholder="Type to search..."> <a href="#"> <i
+                                    class="fa fa-search"></i></a>
+
+                        </div>
+                    </div>
+               
+                <div class="col-md-4 text-center">
+
+
+                    <a href="#"> <i class="fa fa-user"></i> </a>
+                    <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+                    <a href="#"><i class="fa fa-whatsapp whatsapp"></i></a>
+                    <a href="#"><i class="fa fa-location-arrow location"></i></a>
+
+                </div>
+            </div>
+    </div>
+
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Ecommarce.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="#"> dropdown -1</a>
+                        <ul class="dropdown-menu">
+                            <div class="row">
+
+
+                                <div class="col-6 col-sm-3">
+                                    <h2> first </h2>
+                                    <li> <a class="dropdown-item" href="#">Action</a>
+                                        <ul class="sub-dropdown ">
+                                            <li><a class="dropdown-item" href="#">Sub Action 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Sub Action 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li> <a class="dropdown-item" href="#">Another action</a>
+                                        <ul class="sub-dropdown ">
+                                            <li><a class="dropdown-item" href="#">Sub Action 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Sub Action 2</a></li>
+                                            <li><a class="dropdown-item" href="#">Sub Action 3</a>
+                                             <ul     class="sub-dropdown-mobile">
+                                               <li>   <a class="btn btn-primary" >Customise button</a> </li>
+                                               <li>   <a class="btn btn-primary" >Customise button</a> </li>
+                                               <li>   <a class="btn btn-primary" >Customise button</a> </li>
+                                               <li>   <a class="btn btn-primary" >Customise button</a> 
+                                                <ul  class="clearfix">
+                                                    <li> <input type="text" placeholder="Enter text here" /></li>
+                                                    <li> <input type="text" placeholder="Enter text here" /></li>
+                                                    <li> <input type="text" placeholder="Enter text here" /></li>
+                                                </ul>
+                                            
+                                            </li>
+                                             </ul>
+
+                                            
+                                            
+                                            
+                                            <li><a class="dropdown-item" href="#">Sub Action 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li> <a class="dropdown-item" href="#">Something else here</a>
+                                        <ul class="sub-dropdown ">
+                                            <li><a class="dropdown-item" href="#">Sub Action 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Sub Action 2</a></li>
+                                            <li><a class="dropdown-item" href="#">Sub Action 3</a></li>
+                                            <li><a class="dropdown-item" href="#">Sub Action 4</a></li>
+                                        </ul>
+                                    </li>
+
+                                </div>
+
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> dropdown -2</a>
+                        <ul class="dropdown-menu">
+                            <div class="col-6 col-sm-3">
+                                <h2> second </h2>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> dropdown -3</a>
+                        <ul class="dropdown-menu">
+                            <div class="col-6 col-sm-3">
+                                <h2> third </h2>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#"> dropdown -4</a>
+                        <ul class="dropdown-menu">
+                            <div class="col-6 col-sm-3">
+                                <h2> fourth </h2>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    </div>
+  <section>
+    @yield('content')
+  
+  </section>
+    <section>
+        <main>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+
+                                <div class="fotter">
+                                    <button>By Now </button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a short card.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+    </section>
+
+    <footer>
+        <section class="ft1">
+            <div class="container py-4">
+                <div class="row justify-content-between">
+                    <div class="col-md-4 text-center text-md-left ">
+                        <h3 class="my-4">About Us</h3>
+                        <p><a href="#!">Our Story</a></p>
+                        <p><a href="#!">Meet The Team</a></p>
+                        <p><a href="#!">Our Blog</a></p>
+
+                    </div>
+                    <div class="col-md-4 text-center text-md-center mt-md-0 ">
+
+                        <h3 class="my-4 ">Follow us on:</h3>
+
+                        <div class="social-icon">
+
+                            <a class="icon" href="#"> <i class="fa fa-instagram"></i> </a>
+                            <a class="icon" href="#"> <i class="fa fa-instagram"></i> </a>
+                            <a class="icon" href="#"> <i class="fa fa-instagram"></i> </a>
+                            <a class="icon" href="#"> <i class="fa fa-instagram"></i> </a>
+                            <a class="icon" href="#"> <i class="fa fa-instagram"></i> </a>
+                            <a class="icon" href="#"> <i class="fa fa-instagram"></i> </a>
+
+
+                        </div>
+
+
+
+
+
+                    </div>
+                    <div class="col-md-4 text-center text-md-right mt-md-0 ">
+                        <h3 class="my-4 ">Contact Us</h3>
+                        <ul class="text-center list-unstyled ">
+                            <li><i class="fa fa-home mx-2"></i>Address:Basarikhpur chati khan katra shopno-2 Sisotar
+                                Ballia Uttar
+                                pradesh</li>
+                            <li>
+                                <i class="fa fa-envelope mx-2"></i>Email: iduljoha@gmail.com
+                            </li>
+                            <li>
+                                <i class="fa fa-phone mx-2"></i>Phone: + 91 -814153088
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="ft2">
+
+            <div class="py-3">&copy; 2024 A2ZCosmetics | Design by TemplateMo</div>
+        </section>
+    </footer>
+    <!--*************************************** Link to Botstrap.mai.js****************************************************-->
+    <script src="/Bootstrap/JS/bootstrap.min.js"></script>
+
+    <!--*********************************************Link ja site.js*****************************************************-->
+    <script src="/js/site.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script type='text/javascript' src='http://codepen.io/assets/framework/bootstrap.js'> </script>
+    <script src="js/main.js"></script>
+    <!--==============================================jquery-3 cdn =================================-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  
+</body>
+
+</html>
